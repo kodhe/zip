@@ -1,8 +1,8 @@
 # Kodhe Zip Library
 
-Library ZIP archive modern untuk CodeIgniter 3 dengan arsitektur modular PSR-4/PSR-12, mendukung pembuatan dan ekstraksi file ZIP.
+A modern ZIP archive library for CodeIgniter 3 with a PSR-4/PSR-12 modular architecture, supporting creating and extracting ZIP files.
 
-## Fitur
+## Features
 
 - **PSR-4 Autoloading** - Namespace `Kodhe\Framework\Zip\`
 - **PSR-12 Coding Standards** - Clean code style
@@ -13,9 +13,9 @@ Library ZIP archive modern untuk CodeIgniter 3 dengan arsitektur modular PSR-4/P
   - Dependency Injection (easy testing)
 - **Multiple Compression Methods** - Deflate, Store, BZIP2
 - **Streaming Support** - Read/write large files without loading into memory
-- **100% Backward Compatible** - API CI3 tetap berfungsi
+- **100% Backward Compatible** - the CI3 API keeps working
 
-## Instalasi
+## Installation
 
 ### Via Composer
 
@@ -25,7 +25,7 @@ composer require kodhe/zip
 
 ### Manual
 
-Copy folder `src/` ke project Anda dan setup autoloading di `application/config/config.php`:
+Copy the `src/` folder into your project and set up autoloading in `application/config/config.php`:
 
 ```php
 spl_autoload_register(function ($class) {
@@ -42,7 +42,7 @@ spl_autoload_register(function ($class) {
 });
 ```
 
-## Penggunaan
+## Usage
 
 ### CodeIgniter 3 Style (Backward Compatible)
 
@@ -188,7 +188,7 @@ echo "Total size: " . $info['total_size'] . " bytes\n";
 ]
 ```
 
-## Struktur Package
+## Package Structure
 
 ```
 zip/
@@ -228,4 +228,4 @@ vendor/bin/phpunit tests/
 
 ## License
 
-MIT License - lihat file LICENSE untuk detail lengkap.
+MIT License - see the LICENSE file for full details.
